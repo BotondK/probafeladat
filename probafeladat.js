@@ -102,16 +102,22 @@ function kijeloles() {
     //Gyümölcsök konténerbe helyezése
 
     function lerakas() {
+
+        const val1 = "container-1"
+        const val2 = "container-2"
+        const val3 = "container-3"
+
         divId = celDiv.id
-        if (document.getElementById(divId).getElementsByTagName('*').length < 2) {
+
+        if ([val1, val2, val3].includes(divId) && document.getElementById(divId).getElementsByTagName('*').length < 2) {
 
             document.getElementById(divId).appendChild(kijeloltGyumolcs)
             kijeloltGyumolcs.style.display = "flex"
             document.getElementById(halomId).style.border = "none"
             elhelyezve = 1
             nyertemE()
-
-        } else {
+        }
+        else {
             elhelyezve = 0
         }
         //Felhasznált halmok kiszürkítése
@@ -121,7 +127,7 @@ function kijeloles() {
             kijelolve = 0
         }
     }
-
+    
     //Győzelmi feltétel vizsgálata
 
     function nyertemE() {
