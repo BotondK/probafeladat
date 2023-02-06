@@ -1,0 +1,76 @@
+body {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.jatekter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 66.67%;
+    padding: 0px;
+}
+
+.pool {
+    background-image: url(images/pool.png);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 33.33%;
+    margin: 0;
+    padding: 0px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    width: 523px;
+    height: 387px;
+    background-image: url(images/screen.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: space-around;
+    background-size: contain;
+    padding-top: 150px;
+}
+
+.halom {
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+}
+
+.selected {
+    border: 5px dashed #0f0;
+}
+
+.gyumolcs {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.win {
+    background-color: rgba(0, 0, 0, .5);
+    background-image: url(images/star.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
